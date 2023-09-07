@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Blog | Contact</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <nav>
+      <a class="navbar-brand" href="index.html">SYP</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="post.html">Featured Post</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="contact-header">
+      <h1>Contact Me</h1>
+      <p>Let me know your thoughts or questions</p>
+    </header>
+    <main>
+      <p>Fill out the form below with your user information, and we'll reach out!</p>
+      <form action="/file_name.html" method="POST">
+        <section>
+          <label for="username">Username:</label>
+          <input id="username" type="text" name="username" minlength="4" required>
+        </section>
+        <section>
+          <label for="user-password">Password (only numbers, 5-7 digits long):</label>
+          <input id="user-password" type="password" name="user-password" pattern="[0-9]{5,7}" required>
+        </section>
+        <section>
+          <label for="age">Age:</label>
+          <input id="age" type="number" name="age" step="1" min="0" max="130">
+          </section>
+        <section>
+          <label for="satisfaction">How satisfied are you with your current learning techniques?</label>
+          <input id="satisfaction" type="range" name="satisfaction" min="0" max="100" step="1">
+        </section>
+        <section>
+          <p>Which topics do you want to learn?</p>
+          <input id="html" name="topic" type="checkbox" value="html">
+          <label for="html">HTML</label>
+          <br>
+          <input id="css" name="topic" type="checkbox" value="css">
+          <label for="css">CSS</label>
+          <br>
+          <input id="javascript" name="topic" type="checkbox" value="javascript">
+          <label for="javascript">JavaScript</label>
+          <br>
+          <input id="python" name="topic" type="checkbox" value="python">
+          <label for="python">Python</label>
+          <br>
+          <input id="sql" name="topic" type="checkbox" value="sql">
+          <label for="sql">SQL</label>
+        </section>
+        <section>
+          <p>How much time can you invest in learning each week?</p>
+          <input id="one" type="radio" name="time" value="one">
+          <label for="one">1h</label>
+          <br>
+          <input id="three" type="radio" name="time" value="three">
+          <label for="three">3h</label>
+          <br>
+          <input id="five" type="radio" name="time" value="five">
+          <label for="five">5h or more</label>
+          <br>
+        </section>
+        <section>
+          <label for="continent">Which continent are you from?</label>
+          <select id="continent" name="continent">
+            <option value="africa">Africa</option>
+            <option value="antarctica">Antarctica</option>
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+            <option value="europe">Europe</option>
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+          </select>	
+        </section>
+        <section>
+          <label for="continent-visit">Which continent would you like to visit?</label>
+          <input id="continent-visit" type="text" name="continent-visit" list="continents">
+          <datalist id="continents">
+            <option value="Africa"></option>
+            <option value="Antarctica"></option>
+            <option value="Asia"></option>
+            <option value="Australia"></option>
+            <option value="Europe"></option>
+            <option value="North America"></option>
+            <option value="South America"></option>
+          </datalist>
+        </section>
+        <section>
+          <label for="comments">Please share with us any additional comments you may have:</label>
+          <textarea id="comments" name="comments" minlength="10" maxlength="150" rows="5" cols="80">This would be default text.</textarea>
+        </section>
+        <setion class="submit">
+          <input type="submit" value="Send">
+        </setion>
+      </form>
+    </main>
+    <hr>
+    <footer>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+      <p>Copyright &copy; Your Name's Website 2024</p>
+    </footer>
+  </body>
+</html>

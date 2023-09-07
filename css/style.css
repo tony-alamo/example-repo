@@ -1,0 +1,198 @@
+/* General Styling */
+
+body {
+  font-family: Lora, 'Times New Roman', serif;
+  font-size: 20px;
+  color: rgb(51, 51, 51);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+#post-header h1 {
+  font-size: 50px;
+}
+
+a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: rgb(0, 133, 161);
+}
+
+img, video {
+  display: block;
+  margin: 25px auto;
+}
+
+main {
+  margin: 80px auto;
+  width: 50%;
+}
+
+/* Navigation */
+
+.navbar-brand {
+  font-size: 25px;
+  float: left;
+  padding: 11px 13px;
+  font-weight: 900;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  list-style-type: none;
+  float: right;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav li a:hover, .active {
+  background-color: rgb(105, 162, 215);
+  color: white;
+}
+
+/* Header */
+
+header {
+  color: white;
+  font-size: 20px;
+  padding: 100px 0;
+  text-align: center;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#home-header {
+  background-image: url('../img/home-bg.jpg');
+}
+
+#about-header {
+  background-image: url('../img/about-bg.jpg');
+}
+
+#post-header {
+  background-image: url('../img/post-bg.jpg');
+}
+
+#contact-header {
+  background-image: url('../img/contact-bg.jpg');
+}
+
+#post-header h1, #post-header h2, #post-header span {
+  display: block;
+  width: 40%;
+  text-align: left;
+  margin: 15px auto;
+}
+
+header span {
+  font-size: smaller;
+  font-style: italic;
+}
+
+header span a {
+  color: rgb(190, 183, 183);
+}
+
+/* Table */
+
+table {
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+tbody th {
+  text-align: right;
+}
+
+/* Form */
+
+form section {
+  margin: 20px 0;
+}
+
+form p {
+  margin: 0;
+}
+
+form textarea {
+  display: block;
+  margin: 5px 0;
+}
+
+form .submit input {
+  height: 30px;
+  width: 80px;
+  display: block;
+  margin: 40px auto;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  margin: 30px;
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+footer li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+footer li a:hover {
+  background-color: rgb(105, 162, 215);
+  color: white;
+}
+
+footer p {
+  font-size: 17px;
+  color: rgb(96, 94, 94);
+}
